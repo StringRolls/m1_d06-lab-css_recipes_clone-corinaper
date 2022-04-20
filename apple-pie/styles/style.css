@@ -1,0 +1,66 @@
+:root{
+    font-family: 'Nunito', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url(/apple-pie/images/apple-pie.jpg);
+    height: 20em;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+section{
+    margin: 70px;
+}
+
+section>p{
+    text-align: center;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin-top: 50px;
+}
+
+.imageContainer.cooking{
+    height: 100px;
+}
+
+.line {
+    height: 1.5px;
+    background-color: grey;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: "- "; 
+}
+
+ol { 
+    counter-reset: item;
+    list-style-type: none;
+}
+ol li:before{
+    content: counter(item) ") "; 
+    counter-increment: item 
+}
